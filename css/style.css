@@ -1,1 +1,73 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Sans-serif;
+}
+h1 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+h2 {
+  color: white;
+}
+section { 
+  width: 95%;
+  margin: 5px;
+  background: lightgrey;
+ 
+}
+p {
+  width: 95%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  color: black;
+}
+#Plum{
+	background-color: plum;
+}
+#Salmon{
+	background-color: lightsalmon ;
+}
+#Teal{
+	background-color: teal ;
+}
 
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+/*Browser View*/
+@media (min-width: 992px) {
+  .col-lg-4{
+    float: left;
+    border: 5px;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/*Tablet View*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 5px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+/*Mobile View*/
+@media (max-width: 767px) {
+	.col-xs-12{
+    float: left;
+    border: 5px ;
+	}
+	  .col-xs-12 {
+    width: 100%;
+  }
+}
